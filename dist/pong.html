@@ -7,10 +7,44 @@
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8v
+      Ef7N7fWAU"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <style type="text/css">
+      h1.lg-heading,
+      h2.lg-heading,
+      h3.lg-heading {
+        font-size: 2.5rem;
+      }
+      h1.sm-heading,
+      h2.sm-heading,
+      h3.sm-heading {
+        margin-bottom: 0.1rem;
+        padding: 0.1rem 1rem;
+        background: rgba(73, 73, 73, 0.5);
+      }
+      main {
+        padding: 1rem;
+        min-height: calc(100vh - 60px);
+      }
+      #wrapper {
+        margin: 0 0 1px;
+        padding: 1px;
+        min-height: 100%;
+        border-bottom: 0px solid transparent;
+        box-sizing: border-box;
+      }
+      #main {
+        margin: 0px;
+        padding: 15px 0;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.3);
+      }
+    </style>
+
     <title>View My Work</title>
   </head>
 
@@ -42,9 +76,12 @@
 
     <main>
       <h1 class="lg-heading">Pong <span class="text-secondary">Game</span></h1>
-      <h2 class="sm-heading">Lua version of Pong game deployed to web</h2>
-      <div class="projects">
-        <div class="item">
+      <h2 class="sm-heading">
+        Lua version of Pong game deployed to web (use "W" and "S" for Player1
+        and "Up" abd "Down" for Player2 controls)
+      </h2>
+      <div id="wrapper">
+        <div id="main">
           <center>
             <canvas
               id="canvas"
@@ -58,7 +95,7 @@
     </main>
 
     <footer id="main-footer">
-      &copy; 2019 Lukasz Cieslak &middot; Made using the
+      Copyright &copy; 2019 Lukasz Cieslak &middot; Made using the
       <a href="https://love2d.org/" target="_blank">LÖVE Framework</a> (<a
         href="https://bitbucket.org/rude/love/raw/default/license.txt"
         target="_blank"
@@ -69,7 +106,6 @@
       >
     </footer>
 
-    
-    <script src="js/main.js"></script>
+    <script src="js/main_extended.js"></script>
   </body>
 </html>
