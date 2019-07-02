@@ -33,7 +33,7 @@
   var DoLoad = function () {
     Msg(TXT.LOAD);
     window.onerror = function (e, u, l) { Fail(e + '<br>(' + u + ':' + l + ')'); };
-    Module = { TOTAL_MEMORY: 1024 * 1024 * 26, TOTAL_STACK: 1024 * 1024 * 2, currentScriptUrl: '-', preInit: DoExecute };
+    Module = { TOTAL_MEMORY: 1024 * 1024 * 24, TOTAL_STACK: 1024 * 1024 * 2, currentScriptUrl: '-', preInit: DoExecute };
     var s = document.createElement('script'), d = document.documentElement;
     s.src = "js/Pong_Game.js";
     s.async = true;
