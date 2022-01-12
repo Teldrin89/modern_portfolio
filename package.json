@@ -1,17 +1,24 @@
 {
-  "name": "responsive_portfolio",
+  "name": "modern_portfolio",
   "version": "1.0.0",
   "description": "Responsive Portfolio website",
   "main": "index.js",
-  "homepage": "https://Teldrin89.github.io/modern_portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teldrin89/modern_portfolio.git"
+  },
   "author": "Lukasz Cieslak",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Teldrin89/modern_portfolio/issues"
+  },
+  "homepage": "https://Teldrin89.github.io/modern_portfolio",
   "dependencies": {
-    "gh-pages": "^2.0.0",
-    "node-sass": "^4.9.3"
+    "gh-pages": "^3.2.3",
+    "node-sass": "^7.0.1"
   }
 }
